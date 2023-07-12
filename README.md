@@ -44,7 +44,7 @@ jobs:
     steps:
       - name: Cryptosoft-SBOM-Dependency-Track
         id: Cryptosoft-SBOM-Dependency-Track
-        uses: CryptosoftInc/dependencyTrack@1.0.0
+        uses: CryptosoftInc/dependencyTrack-Javascript@1.0.0
         with:
           dt-url: <your dt url>
           # you can store api-key obtained in your github secrets. 
