@@ -15,6 +15,9 @@ This GitHub action will create a valid Software Bill-of-Materials (SBOM) contain
 2) Dependency-Track api-key
 3) Project Name
 4) Project Version
+5) Parent Project Name
+6) Parent Project Version
+  
 
 
 ## Output
@@ -41,13 +44,15 @@ jobs:
     steps:
       - name: Cryptosoft-SBOM-Dependency-Track
         id: Cryptosoft-SBOM-Dependency-Track
-        uses: CryptosoftInc/Dependency-Track-Javascript@1.0.0
+        uses: CryptosoftInc/dependencyTrack@1.0.0
         with:
           dt-url: <your dt url>
           # you can store api-key obtained in your github secrets. 
           api-key: ${{ secrets.apiKey }}
           project-name: <your project name>
           project-version: <your project version >
+          parent-name: <your parent project name>
+          parent-version: <your parent project version >
 ```
  
 ## Contribution
