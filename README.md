@@ -25,7 +25,7 @@ The default token output confirms that the SBOM has been successfully uploaded t
 
 ## Usage
 ```
-uses: CryptosoftInc/Dependency-Track-Javascript@1.0.0
+uses: CryptosoftInc/dependencyTrack-Javascript@1.0.0
 ```
 
 ## To use this action, follow these steps:
